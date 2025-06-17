@@ -122,7 +122,7 @@ function displayChannels(channelList, container) {
         channelCard.dataset.channelId = channel.id;
         channelCard.innerHTML = `
             <span class="channel-category">${channel.category}</span>
-            <img src="assets/logos/${channel.logo}" alt="${channel.name}" class="channel-logo">
+            <img src="${channel.logo}" alt="${channel.name}" class="channel-logo" onerror="this.onerror=null;this.src='https://via.placeholder.com/60?text=LOGO'">
             <span class="channel-name">${channel.name}</span>
         `;
         
@@ -181,10 +181,10 @@ function initializePlayer(videoUrl, channelLogo) {
 function playChannel(channel) {
     document.getElementById('channel-title').textContent = channel.name;
     document.getElementById('channel-description').textContent = `Now playing: ${channel.name}`;
-    document.getElementById('channel-logo').src = `assets/logos/${channel.logo}`;
+    document.getElementById('channel-logo').src = channel.logo;
     
     // Initialize JW Player with custom configuration
-    initializePlayer(channel.url, `assets/logos/${channel.logo}`);
+    initializePlayer(channel.url, channel.logo);
 }
 
 function loadChannels() {
