@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiquidTV</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="https://cdn.jwplayer.com/libraries/IDzF9Zmk.js"></script>
+    <script>jwplayer.key="YOUR_JW_PLAYER_LICENSE_KEY";</script>
+</head>
+<body>
+    <div class="blur-bg"></div>
+    
+    <div class="app-container">
+        <header class="glass-header">
+            <div class="logo">
+                <i class="fas fa-tv"></i>
+                <span>LiquidTV</span>
+            </div>
+            <nav class="nav-controls">
+                <button class="glass-btn" id="theme-toggle"><i class="fas fa-moon"></i></button>
+                <button class="glass-btn" id="fullscreen-btn"><i class="fas fa-expand"></i></button>
+                <button class="glass-btn" id="search-btn"><i class="fas fa-search"></i></button>
+            </nav>
+        </header>
+
+        <main class="content-area">
+            <div class="player-container glass-panel">
+                <div id="jw-player-container"></div>
+                
+                <div class="player-info glass-panel">
+                    <div class="channel-info">
+                        <img id="channel-logo" src="assets/logos/default.png" alt="Channel Logo">
+                        <div>
+                            <h2 id="channel-title">Select a channel</h2>
+                            <p id="channel-description">Browse channels below to start streaming</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="channel-grid-container glass-panel">
+                <div class="section-header">
+                    <h3>Live Channels</h3>
+                    <div class="category-filter">
+                        <select id="category-filter" class="glass-select">
+                            <option value="all">All Categories</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="channel-grid" id="channel-grid">
+                    <!-- Channels will be loaded dynamically -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="search-overlay glass-panel">
+        <div class="search-header">
+            <input type="text" id="channel-search" placeholder="Search channels..." autocomplete="off">
+            <button id="close-search" class="glass-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="search-results" id="search-results"></div>
+    </div>
+
+    <script src="js/players.js"></script>
+    <script src="js/channels.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('js/service-worker.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(err => {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
