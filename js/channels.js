@@ -93,7 +93,7 @@ const channels = [
         logo: 'https://i.imgur.com/vSz2WEp.png',
         category: 'News',
         description: 'International news from the British Broadcasting Corporation',
-        url: 'http://fl3.moveonjoy.com/BBC_WORLD_NEWS/index.m3u8'
+        url: 'https://cdn4.skygo.mn/live/disk1/BBC_News/HLSv3-FTA/BBC_News.m3u8'
     },
     {
         id: 'euronews',
@@ -109,32 +109,40 @@ const channels = [
         logo: 'https://jiotvimages.cdn.jio.com/dare_images/images/9XM.png',
         category: 'Music',
         description: 'Indian Hindi music television channel owned by 9X Media, specializing in Bollywood music videos',
-        url: 'https://d35j504z0x2vu2.cloudfront.net/v1/manifest/0bc8e8376bd8417a1b6761138aa41c26c7309312/9xm/23886666-8fc5-470f-aab1-bd637ed607b1/3.m3u8'
+        url: 'https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/9xm/master.m3u8'
     },
         // New Entertainment Channels
     {
-        id: 'sony-max',
-        name: 'Sony MAX',
-        logo: 'https://i.ibb.co/4T2Jh8R/sonymax.png',
-        category: 'Entertainment',
+        id: 'shemaroobollywood',
+        name: 'Shemaroo Bollywood',
+        logo: 'https://i.ibb.co/wrdbcfZn/shemaroobollywood.png',
+        category: 'Movie',
         description: 'Bollywood movies and entertainment',
-        url: 'https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/Sony_Max_HD_Thumbnail/master.m3u8'
+        url: 'https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/shemaroo-bollywood/master.m3u8'
     },
     {
-        id: 'colors',
-        name: 'Colors HD',
-        logo: 'https://i.ibb.co/0jQ3q9G/colors.png',
-        category: 'Entertainment',
-        description: 'Popular Indian serials and reality shows',
-        url: 'https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/Colors_HD/master.m3u8'
+        id: 'shemaroofilmi-gaane',
+        name: 'Shemaroo Filmi Gaane',
+        logo: 'https://jiotvimages.cdn.jio.com/dare_images/images/shemaroofilmigaane.png',
+        category: 'Music',
+        description: 'Bollywood music and entertainment',
+        url: 'https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/shemaroo-filmigaane/master.m3u8'
     },
     {
-        id: 'star-plus',
-        name: 'Star Plus HD',
-        logo: 'https://i.ibb.co/0nL8k0z/starplus.png',
+        id: 'koreantv',
+        name: 'Korean TV',
+        logo: 'https://i.ibb.co/4ZczvFb7/Chat-GPT-Image-Apr-14-2025-03-25-19-PM-150x150.png',
         category: 'Entertainment',
-        description: 'Leading Hindi general entertainment channel',
-        url: 'https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/Star_Plus_HD/master.m3u8'
+        description: 'Popular korean serials, movies and reality shows',
+        url: 'https://amg02537-skandhamediaser-koreantv-samsungin-ad-1s.amagi.tv/playlist/amg02537-skandhamediaser-koreantv-samsungin/playlist.m3u8'
+    },
+    {
+        id: 'zoom',
+        name: 'Zoom',
+        logo: 'https://jiotvimages.cdn.jio.com/dare_images/images/Zoom.png',
+        category: 'Music',
+        description: 'Leading Hindi muic channel',
+        url: 'https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/zoom-tv/master.m3u8'
     },
 
     // Music Channels
@@ -149,20 +157,19 @@ const channels = [
     {
         id: 'b4u-music',
         name: 'B4U Music',
-        logo: 'https://i.ibb.co/0nL8k0z/b4umusic.png',
+        logo: 'https://i.imgur.com/KSxPLJA.png',
         category: 'Music',
         description: 'Bollywood music and entertainment',
-        url: 'https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/B4U_Music/master.m3u8'
+        url: 'https://cdnb4u.wiseplayout.com/B4U_Music/master.m3u8'
     },
     {
-        id: '9xm',
-        name: '9XM',
-        logo: 'https://i.ibb.co/0nL8k0z/9xm.png',
-        category: 'Music',
-        description: 'Hindi music and chart shows',
-        url: 'https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/9XM/master.m3u8'
+        id: 'b4u-movies',
+        name: 'B4U Movies',
+        logo: 'https://jiotv.catchup.cdn.jio.com/dare_images/images/B4U_Movies.png',
+        category: 'Movie',
+        description: 'Bollywood music and entertainment',
+        url: 'https://cdnb4u.wiseplayout.com/B4U_Movies/master.m3u8'
     },
-
     // Sports Channels
     {
         id: 'star-sports1',
