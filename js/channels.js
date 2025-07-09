@@ -1,4 +1,5 @@
 const channels = [
+    // News
     {
         id: 'aajtak',
         name: 'Aaj Tak HD',
@@ -104,21 +105,22 @@ const channels = [
         url: 'https://apollo.production-public.tubi.io/live/ac-euronews2.m3u8'
     },
     {
+        id: 'dd-india',
+        name: 'DD India',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/2/21/DD_India_logo.jpg',
+        category: 'News',
+        description: 'Government of India’s international broadcasting channel',
+        url: 'https://cdn-7.pishow.tv/live/20/master.m3u8'
+    },
+
+    // Music
+    {
         id: '9xm',
         name: '9XM',
         logo: 'https://jiotvimages.cdn.jio.com/dare_images/images/9XM.png',
         category: 'Music',
         description: 'Indian Hindi music television channel owned by 9X Media, specializing in Bollywood music videos',
         url: 'https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/9xm/master.m3u8'
-    },
-        // New Entertainment Channels
-    {
-        id: 'shemaroobollywood',
-        name: 'Shemaroo Bollywood',
-        logo: 'https://i.ibb.co/wrdbcfZn/shemaroobollywood.png',
-        category: 'Movie',
-        description: 'Bollywood movies and entertainment',
-        url: 'https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/shemaroo-bollywood/master.m3u8'
     },
     {
         id: 'shemaroofilmi-gaane',
@@ -129,28 +131,12 @@ const channels = [
         url: 'https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/shemaroo-filmigaane/master.m3u8'
     },
     {
-        id: 'koreantv',
-        name: 'Korean TV',
-        logo: 'https://i.ibb.co/4ZczvFb7/Chat-GPT-Image-Apr-14-2025-03-25-19-PM-150x150.png',
-        category: 'Entertainment',
-        description: 'Popular korean serials, movies and reality shows',
-        url: 'https://amg02537-skandhamediaser-koreantv-samsungin-ad-1s.amagi.tv/playlist/amg02537-skandhamediaser-koreantv-samsungin/playlist.m3u8'
-    },
-    {
         id: 'zoom',
         name: 'Zoom',
         logo: 'https://jiotvimages.cdn.jio.com/dare_images/images/Zoom.png',
         category: 'Music',
         description: 'Leading Hindi muic channel',
         url: 'https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/zoom-tv/master.m3u8'
-    },
-    {
-        id: 'ted',
-        name: 'TED',
-        logo: 'https://upload.wikimedia.org/wikipedia/commons/a/aa/TED_three_letter_logo.svg',
-        category: 'Education',
-        description: 'Inspiring talks and ideas on technology, entertainment, design, and more',
-        url: 'https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/ted/master.m3u8'
     },
     {
         id: 'b4u-music',
@@ -161,6 +147,24 @@ const channels = [
         url: 'https://cdnb4u.wiseplayout.com/B4U_Music/master.m3u8'
     },
     {
+        id: 'music-india',
+        name: 'Music India',
+        logo: 'https://static.wikia.nocookie.net/logopedia/images/2/2f/Music_India.jpeg',
+        category: 'Music',
+        description: 'Bollywood music videos, countdowns and entertainment',
+        url: 'https://cdn-2.pishow.tv/live/226/master.m3u8'
+    },
+
+    // Movie
+    {
+        id: 'shemaroobollywood',
+        name: 'Shemaroo Bollywood',
+        logo: 'https://i.ibb.co/wrdbcfZn/shemaroobollywood.png',
+        category: 'Movie',
+        description: 'Bollywood movies and entertainment',
+        url: 'https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/shemaroo-bollywood/master.m3u8'
+    },
+    {
         id: 'b4u-movies',
         name: 'B4U Movies',
         logo: 'https://jiotv.catchup.cdn.jio.com/dare_images/images/B4U_Movies.png',
@@ -169,9 +173,61 @@ const channels = [
         url: 'https://cdnb4u.wiseplayout.com/B4U_Movies/master.m3u8'
     },
     {
+        id: 'goldmines-movies',
+        name: 'Goldmines Movies',
+        logo: 'https://yt3.googleusercontent.com/d66J-MMZ06-55gkF5maclPGB5f5j1L0SAs3iWnl3lhoswlWrJ67wD2a3mZGkgHgt-W3kMrIT=s160-c-k-c0x00ffffff-no-rj',
+        category: 'Movie',
+        description: 'Popular Hindi movies, especially dubbed South Indian blockbusters',
+        url: 'https://cdn-2.pishow.tv/live/1461/master.m3u8'
+    },
+    {
+        id: 'goldmines-2',
+        name: 'Goldmines 2',
+        logo: 'https://5.imimg.com/data5/SELLER/Default/2024/7/433249328/BI/AC/EM/184162459/goldmines-telefilms-advertisements-services.png',
+        category: 'Movie',
+        description: 'More blockbuster Hindi and dubbed South Indian movies',
+        url: 'https://cdn-2.pishow.tv/live/1460/master.m3u8'
+    },
+    {
+        id: 'bollywood-hd',
+        name: 'Bollywood HD',
+        logo: 'https://static.wikia.nocookie.net/logopedia/images/d/d5/Bollywood_HD_%282018%29.svg',
+        category: 'Movie',
+        description: 'HD Bollywood films and entertainment',
+        url: 'https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-hd/manifest.m3u8'
+    },
+    {
+        id: 'bollywood-classic-hd',
+        name: 'Bollywood Classic HD',
+        logo: 'https://static.wikia.nocookie.net/logopedia/images/0/0d/Bollywood_Clasic_2024.svg',
+        category: 'Movie',
+        description: 'Classic Bollywood films in high definition',
+        url: 'https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-classic/manifest.m3u8'
+    },
+
+    // Entertainment
+    {
+        id: 'koreantv',
+        name: 'Korean TV',
+        logo: 'https://i.ibb.co/4ZczvFb7/Chat-GPT-Image-Apr-14-2025-03-25-19-PM-150x150.png',
+        category: 'Entertainment',
+        description: 'Popular korean serials, movies and reality shows',
+        url: 'https://amg02537-skandhamediaser-koreantv-samsungin-ad-1s.amagi.tv/playlist/amg02537-skandhamediaser-koreantv-samsungin/playlist.m3u8'
+    },
+    {
+        id: 'e24',
+        name: 'E24',
+        logo: 'https://upload.wikimedia.org/wikipedia/en/1/17/E24-TV-Channel.jpg',
+        category: 'Entertainment',
+        description: 'Bollywood gossip, music, movie previews, and celebrity updates',
+        url: 'https://bagnetwork.digivive.com/hlslive/Admin/px09241091/live/E24LiveB/master_1.m3u8'
+    },
+
+    // Kids
+    {
         id: 'babysharktv',
         name: 'Baby Shark TV',
-        logo: 'https://provider-static.plex.tv/epg/cms/production/f8f7c285-f574-4037-84cd-131a22066e57/Channel_Logo_dark_1500x1000_.png',  // You can replace this with a custom logo if needed
+        logo: 'https://provider-static.plex.tv/epg/cms/production/f8f7c285-f574-4037-84cd-131a22066e57/Channel_Logo_dark_1500x1000_.png',
         category: 'Kids',
         description: 'Fun and educational songs and videos featuring Baby Shark and friends for young children.',
         url: 'https://newidco-babysharktv-1-eu.rakuten.wurl.tv/playlist.m3u8'
@@ -184,6 +240,8 @@ const channels = [
         description: 'Popular animated shows and cartoons for kids and teens, featuring characters like Ben 10 and Gumball.',
         url: 'https://tvsen5.aynaott.com/cartoonnetwork/index.m3u8'
     },
+
+    // Documentary
     {
         id: 'natgeo',
         name: 'National Geographic',
@@ -192,47 +250,14 @@ const channels = [
         description: 'Exploring science, nature, history, and culture through award-winning documentaries and series.',
         url: 'https://fl5.moveonjoy.com/National_Geographic/index.m3u8'
     },
-    // Sports Channels
-    {
-        id: 'star-sports1',
-        name: 'Star Sports 1',
-        logo: 'https://i.ibb.co/0nL8k0z/starsports1.png',
-        category: 'Sports',
-        description: 'Live cricket, football and more',
-        url: 'https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/Star_Sports_1_HD/master.m3u8'
-    },
-    {
-        id: 'sony-ten1',
-        name: 'Sony Ten 1',
-        logo: 'https://i.ibb.co/0nL8k0z/sonyten1.png',
-        category: 'Sports',
-        description: 'Live sports including football, WWE',
-        url: 'https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/Sony_Ten_1_HD/master.m3u8'
-    },
-    {
-        id: 'eurosport',
-        name: 'Eurosport',
-        logo: 'https://i.ibb.co/0nL8k0z/eurosport.png',
-        category: 'Sports',
-        description: 'International sports coverage',
-        url: 'https://rakuten-eurosport-2-fi.samsung.wurl.com/manifest/playlist.m3u8'
-    },
 
-    // International Entertainment
+    // Education
     {
-        id: 'hbo',
-        name: 'HBO',
-        logo: 'https://i.ibb.co/0nL8k0z/hbo.png',
-        category: 'Entertainment',
-        description: 'Hollywood movies and series',
-        url: 'https://rakuten-hbo-1-pt.samsung.wurl.com/manifest/playlist.m3u8'
-    },
-    {
-        id: 'cnn-int',
-        name: 'CNN International',
-        logo: 'https://i.ibb.co/0nL8k0z/cnnint.png',
-        category: 'News',
-        description: 'Global news coverage',
-        url: 'https://turner-cnn-international-1-eu.rakuten.wurl.tv/playlist.m3u8'
+        id: 'ted',
+        name: 'TED',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/a/aa/TED_three_letter_logo.svg',
+        category: 'Education',
+        description: 'Inspiring talks and ideas on technology, entertainment, design, and more',
+        url: 'https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/ted/master.m3u8'
     }
 ];
