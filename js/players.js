@@ -1,5 +1,3 @@
-// players.js - JW Player specific implementation
-
 function initializeJWPlayer(videoUrl, channelLogo) {
     jwplayer("jw-player-container").setup({
         aspectratio: "16:9",
@@ -7,6 +5,7 @@ function initializeJWPlayer(videoUrl, channelLogo) {
         file: videoUrl,
         image: channelLogo || "https://img.freepik.com/free-photo/empty-home-studio-used-internet-show_482257-86924.jpg",
         autostart: true,
+        mute: false, // Ensure audio is not muted
         hlshtml: true,
         abouttext: "Ultrawebs(HM)",
         aboutlink: "https://linktr.ee/ultrawebs",
