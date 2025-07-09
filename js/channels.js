@@ -144,15 +144,13 @@ const channels = [
         description: 'Leading Hindi muic channel',
         url: 'https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/zoom-tv/master.m3u8'
     },
-
-    // Music Channels
     {
-        id: 'mtv-india',
-        name: 'MTV India',
-        logo: 'https://i.ibb.co/0mXbw0Q/mtvindia.png',
-        category: 'Music',
-        description: 'Latest music videos and youth programs',
-        url: 'https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/MTV_HD/master.m3u8'
+        id: 'ted',
+        name: 'TED',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/a/aa/TED_three_letter_logo.svg',
+        category: 'Education',
+        description: 'Inspiring talks and ideas on technology, entertainment, design, and more',
+        url: 'https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/ted/master.m3u8'
     },
     {
         id: 'b4u-music',
@@ -169,6 +167,30 @@ const channels = [
         category: 'Movie',
         description: 'Bollywood music and entertainment',
         url: 'https://cdnb4u.wiseplayout.com/B4U_Movies/master.m3u8'
+    },
+    {
+        id: 'babysharktv',
+        name: 'Baby Shark TV',
+        logo: 'https://provider-static.plex.tv/epg/cms/production/f8f7c285-f574-4037-84cd-131a22066e57/Channel_Logo_dark_1500x1000_.png',  // You can replace this with a custom logo if needed
+        category: 'Kids',
+        description: 'Fun and educational songs and videos featuring Baby Shark and friends for young children.',
+        url: 'https://newidco-babysharktv-1-eu.rakuten.wurl.tv/playlist.m3u8'
+    },
+    {
+        id: 'cartoonnetwork',
+        name: 'Cartoon Network',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/8/80/Cartoon_Network_2010_logo.svg',
+        category: 'Kids',
+        description: 'Popular animated shows and cartoons for kids and teens, featuring characters like Ben 10 and Gumball.',
+        url: 'https://tvsen5.aynaott.com/cartoonnetwork/index.m3u8'
+    },
+    {
+        id: 'natgeo',
+        name: 'National Geographic',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/f/fc/Natgeologo.svg',
+        category: 'Documentary',
+        description: 'Exploring science, nature, history, and culture through award-winning documentaries and series.',
+        url: 'https://fl5.moveonjoy.com/National_Geographic/index.m3u8'
     },
     // Sports Channels
     {
